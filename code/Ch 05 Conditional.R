@@ -1,4 +1,7 @@
 
+# 5장 조건문
+
+# 5.1.1 if문 기본 사용법
 # 정수형 벡터 obj 생성 
 obj <- 1L
 
@@ -22,6 +25,8 @@ if (class(x = obj) == 'integer') {
   print(x = '정수입니다!')
 }
 
+
+# 5.1.2 if - else문
 # if문의 괄호 안의 값이 FALSE일 때, 실행할 코드를 else문에 추가
 if (class(x = obj) == 'integer') {
   print(x = '정수입니다!')
@@ -29,6 +34,8 @@ if (class(x = obj) == 'integer') {
   print(x = '정수가 아닙니다!')
 }
 
+
+# 5.1.3 if - else if - else문
 # if문에서 고려해야 할 조건 추가
 if (class(x = obj) == 'integer') {
   print(x = '정수입니다!')
@@ -59,7 +66,9 @@ if (score >= 70) {
 
 # 결과를 콘솔 창에 출력
 print(x = grade)
-  
+
+
+# 5.3 ifelse() 함수  
 # 여러 원소를 갖는 벡터 생성
 score <- seq(from = 40, to = 100, by = 10)
 
@@ -81,3 +90,5 @@ df$grade <- ifelse(test = df$score >= 70, yes = '합격', no = '불합격')
 # df를 콘솔 창에 출력
 print(x = df)
 
+
+## End of Document
