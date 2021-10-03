@@ -72,7 +72,7 @@ ggplot(data = apt, mapping = aes(x = 거래금액)) +
         panel.grid = element_blank())
 
 # 사용자 테마 설정
-mytheme <- theme_bw(base_family = 'GamjaFlower') + 
+mytheme <- theme_bw(base_family = 'NanumGothic') + 
   theme(plot.title = element_text(size = 14, hjust = 0.5),
         panel.grid = element_blank())
 
